@@ -1,0 +1,412 @@
+/********************************
+  RESET / BASE
+********************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #FDFDFD;
+  scroll-behavior: smooth;
+}
+
+/********************************
+  CONTAINER (layout général)
+********************************/
+.container {
+  width: 85%; /* Largeur ajustée pour plus d'espace */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/********************************
+  NAVBAR
+********************************/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #666;
+}
+
+/* Bouton CTA dans la nav */
+.cta-btn {
+  text-decoration: none;
+  padding: 10px 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #333;
+}
+
+/* Style du logo dans la navigation */
+.logo {
+  display: flex;
+  align-items: center; /* Aligner verticalement l'image et le texte */
+}
+
+.logo a {
+  text-decoration: none; /* Supprimer le soulignement */
+  color: #333; /* Couleur du texte */
+  font-size: 24px; /* Taille du texte */
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Centrer verticalement l'image et le texte */
+}
+
+.logo-icon {
+  width: 60px; /* Largeur du logo */
+  height: auto; /* Garde les proportions */
+  margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+
+/********************************
+  HERO SECTION
+********************************/
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70vh;
+  margin-top: 10px;
+  padding: 40px 0;
+}
+
+.hero-left {
+  flex: 1;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Texte aligné à gauche */
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* Sous-titre + CTA */
+.hero-subblock {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; /* Ajusté pour descendre légèrement */
+}
+
+.hero-subblock p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Conteneur des badges App Store et Google Play */
+.cta-downloads {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-downloads a {
+  display: inline-block;
+  width: 140px;
+}
+
+.cta-downloads img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.cta-downloads img:hover {
+  transform: scale(1.1); /* Effet zoom au survol */
+}
+
+/* Image droite dans le hero */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/********************************
+  TRANSITION WAVE
+********************************/
+.wave-transition {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  margin-bottom: -5px; /* Coller à la section suivante */
+  background: #FDFDFD;
+}
+
+.wave-transition svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/********************************
+  SECTIONS GÉNÉRALES
+********************************/
+.section {
+  padding: 80px 0; /* Uniformiser l'espace entre les sections */
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #222;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/********************************
+  NOTRE SOLUTION
+********************************/
+.solution-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Adaptation sur petits écrans */
+  padding-bottom: 120px; /* Augmentation de l'espace avec la section suivante */
+}
+
+.solution-left,
+.solution-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.solution-left {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.solution-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.solution-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solution-right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #222;
+}
+
+.solution-right p {
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.secondary-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  align-self: flex-start; /* Aligne le bouton à gauche */
+}
+
+.secondary-btn:hover {
+  background-color: #0056b3;
+}
+
+/********************************
+  FEATURES
+********************************/
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px; /* Espacement entre les cartes */
+  margin-top: 40px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 320px;
+  text-align: center;
+  padding: 24px;
+  transition: box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/********************************
+  FAQ
+********************************/
+.faq-item {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.faq-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.faq-item p {
+  margin-bottom: 16px;
+  color: #555;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/********************************
+  CTA SECTION
+********************************/
+.cta-section {
+  background-color: #f8f8f8;
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-section .cta-downloads {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-section .cta-downloads a {
+  width: 140px;
+}
+
+.cta-section .cta-downloads img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.cta-section .cta-downloads img:hover {
+  transform: scale(1.1);
+}
+
+/********************************
+  FOOTER
+********************************/
+.footer {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}

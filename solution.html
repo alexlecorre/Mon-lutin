@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notre Solution – Mon Lutin</title>
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Librairie AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar container">
+    <div class="logo">Mon Lutin</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#signup" class="btn cta-btn">Télécharger l'app</a>
+  </nav>
+
+  <!-- Titre principal -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Notre Solution</h1>
+      <p>Découvrez comment Mon Lutin transforme la gestion de votre patrimoine et simplifie les démarches d’assurance.</p>
+    </div>
+  </header>
+
+  <!-- Présentation des blocs -->
+  <section class="solution-details container">
+    <div class="detail-block" data-aos="fade-up">
+      <div class="detail-text">
+        <h2>Suivi intelligent</h2>
+        <p>
+          Grâce à notre technologie basée sur l’IA, Mon Lutin surveille et met à jour automatiquement l’inventaire
+          de vos biens. Ne perdez plus de temps avec des tâches manuelles.
+        </p>
+      </div>
+      <img src="assets/images/solution-block1.png" alt="Suivi intelligent" />
+    </div>
+
+    <div class="detail-block reverse" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/images/solution-block2.png" alt="Gestion des sinistres simplifiée" />
+      <div class="detail-text">
+        <h2>Gestion des sinistres simplifiée</h2>
+        <p>
+          En cas de sinistre, générez en un clic un dossier complet pour votre assureur, incluant factures, photos
+          et informations clés.
+        </p>
+      </div>
+    </div>
+
+    <div class="detail-block" data-aos="fade-up" data-aos-delay="200">
+      <div class="detail-text">
+        <h2>Alertes personnalisées</h2>
+        <p>
+          Recevez des notifications sur les risques potentiels (intempéries, cambriolages) et des rappels pour
+          vos garanties et échéances importantes.
+        </p>
+      </div>
+      <img src="assets/images/solution-block3.png" alt="Alertes personnalisées" />
+    </div>
+  </section>
+
+  <!-- Section CTA -->
+  <section class="cta-section container">
+    <h2>Prêt à sécuriser votre patrimoine&nbsp;?</h2>
+    <p>Téléchargez l’application Mon Lutin pour simplifier votre quotidien.</p>
+    <div class="cta-downloads">
+      <a href="https://apps.apple.com" target="_blank" class="cta-appstore">
+        <img src="assets/images/app-store-badge.png" alt="Télécharger sur l'App Store" />
+      </a>
+      <a href="https://play.google.com" target="_blank" class="cta-googleplay">
+        <img src="assets/images/google-play-badge.png" alt="Disponible sur Google Play" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Mon Lutin. Tous droits réservés.</p>
+      <div class="social-icons">
+        <a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="assets/images/twitter-icon.png" alt="Twitter" /></a>
+        <a href="#"><img src="assets/images/linkedin-icon.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Durée de l'animation en ms
+      offset: 100,    // Décalage avant le déclenchement de l'animation
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+   └─ images/
+        ├─ hero-image.png
+        ├─ solution.png
+        ├─ feature1.png
+        ├─ feature2.png
+        ├─ feature3.png
+        ├─ facebook-icon.png
+        ├─ twitter-icon.png
+        ├─ linkedin-icon.png
+        └─ wave.svg (optionnel si tu veux externaliser la vague)
